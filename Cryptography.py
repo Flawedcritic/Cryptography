@@ -87,12 +87,12 @@ def affine_encrypt():
 
 #returns multiplicative inverse of given key
 #def find_inverse(key):
-    possible_keys = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
-    for i in possible_keys:
-        if (key*i) % 26 == 1:
-            inverse = i
-            break
-    return inverse
+    #possible_keys = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
+    #for i in possible_keys:
+        #if (key*i) % 26 == 1:
+            #inverse = i
+            #break
+    #return inverse
 
 #returns decrypted values to affine_decrypt
 def dec_convert(letter, key1, key2):

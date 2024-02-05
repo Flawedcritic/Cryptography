@@ -86,7 +86,7 @@ def affine_encrypt():
     return changed_sent
 
 #returns multiplicative inverse of given key
-def find_inverse(key):
+#def find_inverse(key):
     possible_keys = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
     for i in possible_keys:
         if (key*i) % 26 == 1:
@@ -96,7 +96,7 @@ def find_inverse(key):
 
 #returns decrypted values to affine_decrypt
 def dec_convert(letter, key1, key2):
-    a = find_inverse(key1)
+    a = pow(key1,-1,26)
     c = ((alpha_dict[letter] - key2) * a) % 26
     m = alpha_list[c]
     return m

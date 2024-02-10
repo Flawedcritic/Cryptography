@@ -25,9 +25,9 @@ def affine_decrypt():
             changed_sent = ''
             for i in actual_sent:
                 if i.isnumeric == True:
-                    pass
+                    changed_sent = changed_sent
                 elif i in spec_chara:
-                    pass
+                    changed_sent = changed_sent
                 elif i == ' ':
                     changed_sent = changed_sent + ' '
                 else:

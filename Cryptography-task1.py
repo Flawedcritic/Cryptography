@@ -100,9 +100,9 @@ def affine_decrypt():
     changed_sent = ''
     for i in actual_sent:
         if i.isnumeric == True:
-            pass
+            changed_sent = changed_sent
         elif i in spec_chara:
-            pass
+            changed_sent = changed_sent
         elif i == ' ':
             changed_sent = changed_sent + ' '
         else:
@@ -122,6 +122,7 @@ def main():
         print("quitting!")
         exit
         
-#prevents the main function from being called when this python file is called somewhere else
+#prevents the main function from bein1
+# g called when this python file is called somewhere else
 if __name__ == "__main__":
     main()

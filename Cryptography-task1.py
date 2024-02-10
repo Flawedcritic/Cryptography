@@ -122,7 +122,6 @@ def main():
         print("quitting!")
         exit
         
-#prevents the main function from bein1
-# g called when this python file is called somewhere else
+#prevents the main function from being called when this python file is called somewhere else
 if __name__ == "__main__":
     main()

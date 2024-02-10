@@ -85,15 +85,6 @@ def affine_encrypt():
             changed_sent = changed_sent + enc_convert(i, key1, key2)
     return changed_sent
 
-#returns multiplicative inverse of given key
-#def find_inverse(key):
-    #possible_keys = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
-    #for i in possible_keys:
-        #if (key*i) % 26 == 1:
-            #inverse = i
-            #break
-    #1return inverse
-
 #returns decrypted values to affine_decrypt
 def dec_convert(letter, key1, key2):
     a = pow(key1,-1,26)
